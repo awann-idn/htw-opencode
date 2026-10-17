@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://htw-opencode.pages.dev/sitemap.xml
