@@ -2,7 +2,7 @@
 
 Panduan lengkap penggunaan OpenCode: instalasi, pengaturan API key, integrasi VS Code dan Antigravity, cara pakai sehari-hari, konfigurasi lanjutan, dan troubleshooting.
 
-Situs publik: https://htw-opencode.pages.dev/
+Situs publik: https://htw-opencode.naawaa1903.workers.dev/
 
 ## Struktur
 
@@ -12,6 +12,7 @@ Situs publik: https://htw-opencode.pages.dev/
 │   ├── index.md                  # Halaman utama
 │   └── how-to-use-opencode.md    # Panduan lengkap
 ├── mkdocs.yml                    # Konfigurasi situs
+├── wrangler.jsonc                # Konfigurasi Cloudflare Workers
 ├── requirements.txt              # Dependensi build
 └── site/                         # Hasil build (tidak di-commit)
 ```
@@ -35,7 +36,8 @@ Hasil build ada di folder `site/`.
 
 ## Deploy
 
-Situs di-deploy otomatis oleh Cloudflare Pages setiap kali ada push ke branch `main`.
+Situs di-deploy otomatis oleh Cloudflare Workers setiap kali ada push ke branch `main`.
 
 - Build command: `python -m pip install -r requirements.txt && python -m mkdocs build --strict`
-- Output directory: `site`
+- Deploy command: `npx wrangler deploy`
+- Asset directory: `site` (lihat `wrangler.jsonc`)

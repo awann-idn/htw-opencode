@@ -1,7 +1,7 @@
 site_name: Panduan OpenCode
 site_description: Panduan lengkap instalasi, API key, integrasi VS Code & Antigravity, dan pemakaian OpenCode.
 site_author: Panduan OpenCode
-site_url: https://htw-opencode.pages.dev/
+site_url: https://htw-opencode.naawaa1903.workers.dev/
 repo_url: https://github.com/awann-idn/htw-opencode
 repo_name: awann-idn/htw-opencode
 edit_uri: edit/main/docs/

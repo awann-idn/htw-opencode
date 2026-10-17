@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://htw-opencode.pages.dev/sitemap.xml
+Sitemap: https://htw-opencode.naawaa1903.workers.dev/sitemap.xml
